@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar layoutX="13.0" layoutY="11.0" prefHeight="43.0" prefWidth="674.0">
+         <items>
+            <Button mnemonicParsing="false" text="Обрати шаблон" />
+            <Button mnemonicParsing="false" text="Зберегти" />
+            <Label text="Тип документа: " />
+            <ComboBox prefWidth="150.0" promptText="Запрошення">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Запрошення"/>
+                        <String fx:value="Візитівка"/>
+                        <String fx:value="Лист"/>
+                        <String fx:value="Звіт"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+         </items>
+      </ToolBar>
+      <AnchorPane layoutY="63.0" prefHeight="336.0" prefWidth="700.0" style="-fx-background-color: #FAFAFA;">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="308.0" prefWidth="198.0" style="-fx-background-color: #808080;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="46.0" prefWidth="264.0" text="Список осіб">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ListView prefHeight="214.0" prefWidth="195.0" />
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="198.0" text="Оновити базу" />
+               </children>
+            </VBox>
+            <TextArea layoutX="238.0" layoutY="14.0" prefHeight="308.0" prefWidth="450.0" style="-fx-background-color: #808080;" />
+            <Label alignment="CENTER" layoutX="238.0" layoutY="15.0" prefHeight="34.0" prefWidth="450.0" text="Перегляд шаблону">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
