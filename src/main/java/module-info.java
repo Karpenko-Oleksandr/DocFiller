@@ -10,6 +10,9 @@ module org.javaee.docfiller {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
+    requires java.desktop;
+    requires mysql.connector.j;
 
     opens org.javaee.docfiller to javafx.fxml;
     exports org.javaee.docfiller;
