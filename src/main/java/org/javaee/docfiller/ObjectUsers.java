@@ -8,7 +8,6 @@ public class ObjectUsers {
     private String email;
     private String company;
     private String jobPosition;
-
     public ObjectUsers(int idpeople, String firstName, String lastName, String phone, String email, String company, String jobPosition) {
         this.idpeople = idpeople;
         this.firstName = firstName;
@@ -18,11 +17,9 @@ public class ObjectUsers {
         this.company = company;
         this.jobPosition = jobPosition;
     }
-
     public int getIdpeople() {
         return idpeople;
     }
-
     public void setIdpeople(int idpeople) {
         this.idpeople = idpeople;
     }
@@ -30,7 +27,6 @@ public class ObjectUsers {
     public String getFirstName() {
         return firstName;
     }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -38,7 +34,6 @@ public class ObjectUsers {
     public String getLastName() {
         return lastName;
     }
-
     public String getPhone() {
         return phone;
     }
@@ -46,7 +41,6 @@ public class ObjectUsers {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
     public String getEmail() {
         return email;
     }

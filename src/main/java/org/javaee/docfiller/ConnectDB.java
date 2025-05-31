@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectDB {
-    private final String dbname = "people";  // Назва бази даних
-    private final String dbuser = "root";    // Логін користувача
-    private final String dbpassword = "12345"; // Пароль користувача
+    private final String dbname = "people";
+    private final String dbuser = "root";
+    private final String dbpassword = "12345";
 
     // Підключення до бази даних
     public Connection getConnection() throws SQLException {
@@ -20,5 +20,6 @@ public class ConnectDB {
         }
     }
 }
+
 
 

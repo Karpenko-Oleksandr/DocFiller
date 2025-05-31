@@ -80,7 +80,6 @@ public class HelloController {
         if (!resultSet.isBeforeFirst()) {
             System.out.println("No data found in the database.");
         }
-
         while (resultSet.next()) {
             objectUsers.add(new ObjectUsers(
                     resultSet.getInt("idpeople"),
@@ -92,7 +91,6 @@ public class HelloController {
                     resultSet.getString("jobPosition")
             ));
         }
-
         id.setCellValueFactory(new PropertyValueFactory<>("idpeople"));
         firstName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
         lastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
@@ -102,7 +100,6 @@ public class HelloController {
         documentTypeComboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
             updateInvitationText(newValue);
         });
-
         table_users.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 updateInvitationText(documentTypeComboBox.getValue(), newValue);
